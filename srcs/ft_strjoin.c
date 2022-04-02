@@ -6,11 +6,11 @@
 /*   By: anremiki <anremiki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 12:39:26 by anremiki          #+#    #+#             */
-/*   Updated: 2021/10/14 00:24:53 by anremiki         ###   ########.fr       */
+/*   Updated: 2022/03/26 15:35:17 by anremiki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
