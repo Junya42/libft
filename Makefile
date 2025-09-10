@@ -22,7 +22,7 @@ SRCS			=	./srcs/ft_isalnum.c ./srcs/ft_isprint.c ./srcs/ft_memcmp.c \
 					./srcs/ft_isdigit.c ./srcs/ft_memchr.c  ./srcs/ft_memset.c  \
 					./srcs/ft_putstr_fd.c  ./srcs/ft_strjoin.c ./srcs/ft_strmapi.c \
 					./srcs/ft_strtrim.c	./srcs/ft_arrayclear.c	./srcs/ft_isspace.c	\
-					./srcs/ft_strstr.c
+					./srcs/ft_strstr.c ./srcs/ft_strcmp.c ./srcs/ft_atof.c
 
 SRCSB			=	./srcs/ft_lstnew.c ./srcs/ft_lstadd_front.c ./srcs/ft_lstsize.c \
 					./srcs/ft_lstlast.c ./srcs/ft_lstadd_back.c ./srcs/ft_lstdelone.c \

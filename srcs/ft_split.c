@@ -47,6 +47,21 @@ void	ft_memorycpy(char *memory, char const *s, char *res)
 	*res = '\0';
 }
 
+char **ft_freearray(char **res) {
+    int i;
+    i = 0;
+    if (!res)
+        return (NULL);
+    while (res[i]) {
+        if (res[i]) {
+            free(res[i]);
+        }
+        i++;
+    }
+    free(res);
+    return (NULL);
+}
+
 char	**ft_secure(char const *s, char c, char **res, char *memory)
 {
 	int	i;
@@ -61,7 +76,7 @@ char	**ft_secure(char const *s, char c, char **res, char *memory)
 				s++;
 			res[i] = (char *)malloc(sizeof(char) * (s - memory + 1));
 			if (!res[i])
-				return (NULL);
+				return (ft_freearray(res));
 			ft_memorycpy(memory, s, res[i]);
 			i++;
 		}
@@ -77,9 +92,11 @@ char	**ft_split(char const *s, char c)
 	char	**res;
 	char	*memory;
 
+	if (!s)
+		return (NULL);
 	memory = (char *)s;
 	res = (char **)malloc(sizeof(char *) * (ft_get_size(s, c) + 1));
-	if (!res || !s)
+	if (!res)
 		return (NULL);
 	return (ft_secure(s, c, res, memory));
 }

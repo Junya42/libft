@@ -20,6 +20,7 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # include <limits.h>
+# include <float.h>
 # include "get_next_line.h"
 
 typedef struct s_list
@@ -49,6 +50,7 @@ void	ft_bzero(void *s, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strstr(char *str, char *to_find);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
@@ -74,6 +76,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 /*	conversion	*/
 int		ft_atoi(const char *nptr);
+float	ft_atof(const char *nptr);
 char	*ft_itoa(int n);
 
 /*	t_list	*/
